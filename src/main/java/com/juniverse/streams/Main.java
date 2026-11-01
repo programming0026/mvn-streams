@@ -4,16 +4,19 @@ import com.juniverse.streams.advanced.AdvancedStreamsDemo;
 import com.juniverse.streams.basics.BasicOperationsDemo;
 import com.juniverse.streams.collectors.CollectorsDemo;
 
+import java.util.logging.Logger;
 /**
  * Guía práctica de la API de Streams de Java: operaciones básicas, collectors y técnicas avanzadas.
  */
 public final class Main {
+    private static final Logger LOGGER = AppLogger.get(Main.class);
+
 
     private Main() {
     }
 
     private static void title(String text) {
-        System.out.println("\n=========== " + text + " ===========");
+        LOGGER.info("\n=========== " + text + " ===========");
     }
 
     /**
